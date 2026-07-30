@@ -1,522 +1,875 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- =====================================
+       DOCUMENT METADATA
+  ====================================== -->
 
-        <title>Products | PRICYN Bakery</title>
-        
-        <meta name="description"
-            content="Explore our selection of fresh bread, pastries, doughnuts, meat pies and other bakery products.">
-        
-        <meta property="og:image" content="../images/logo/pb-prime.png">
-            
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="../css/style.css">
+    <title>Our Products | Fresh Bread, Pastries & Cakes | PRICYN Bakery</title>
 
-        <!-- Products CSS -->
-        <link rel="stylesheet" href="../css/products.css">
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="../images/logo/favicon.png">
+    <meta
+      name="description"
+      content="Browse PRICYN Bakery's range of fresh bread, pastries, cakes, meat pies and handcrafted baked goods made daily in Accra, Ghana."
+    />
 
-        <script type="application/ld+json">
-            {
-            "@context": "https://schema.org",
-            "@type": "Bakery",
-            "name": "PRICYN Bakery",
-            "image": "images/logo/pb-prime.png",
-            "telephone": "+233538849073",
-            "email": "pricynbakery@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Israel - Lapaz",
-                "addressLocality": "Accra",
-                "addressCountry": "GH"
-            },
-            "servesCuisine": "Bakery Products"
-            }
-            </script>
-    </head>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="PRICYN Bakery" />
+    <meta name="theme-color" content="#F68900" />
+    <meta name="color-scheme" content="light" />
 
-    <body>
-       <header>
-            <nav class="navbar">
+    <!-- =====================================
+       CANONICAL
+  ====================================== -->
 
-                <a href="../index.html">
-                    <div class="logo">
-                        <img src="../images/logo/pb-prime.png" alt="PRICYN Bakery Logo" loading="lazy">
-                    </div>
-                </a>
+    <link rel="canonical" href="https://your-domain.com/pages/products.html" />
 
-                <div class="hamburger">
+    <!-- =====================================
+       OPEN GRAPH
+  ====================================== -->
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <meta property="og:title" content="Our Products | PRICYN Bakery" />
 
-                </div>
+    <meta
+      property="og:description"
+      content="Explore freshly baked bread, pastries, cakes, meat pies and artisan bakery products made daily at PRICYN Bakery."
+    />
 
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <meta
+      property="og:image"
+      content="https://your-domain.com/images/hero/products-hero.jpg"
+    />
 
-            </nav>
-        </header>
+    <meta
+      property="og:url"
+      content="https://your-domain.com/pages/products.html"
+    />
 
-        <section class="products-hero">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PRICYN Bakery" />
+    <meta property="og:locale" content="en_GH" />
 
-            <div class="products-hero-overlay">
+    <!-- =====================================
+       TWITTER / X
+  ====================================== -->
 
-                <div class="products-hero-content">
+    <meta name="twitter:card" content="summary_large_image" />
 
-                    <h1>Our Products</h1>
+    <meta name="twitter:title" content="Our Products | PRICYN Bakery" />
 
-                    <div class="products-tagline">
+    <meta
+      name="twitter:description"
+      content="Discover fresh bread, pastries, cakes and handcrafted baked goods at PRICYN Bakery."
+    />
 
-                        <span></span>
+    <meta
+      name="twitter:image"
+      content="https://your-domain.com/images/hero/products-hero.jpg"
+    />
 
-                        <h2>Freshly Baked Every Day</h2>
+    <!-- =====================================
+       PERFORMANCE
+  ====================================== -->
 
-                        <span></span>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-                    </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-                    <p>
-                        Discover our selection of breads, rolls,
-                        pastries and baked treats crafted with
-                        quality ingredients and care.
-                    </p>
+    <link
+      rel="preload"
+      as="image"
+      href="../images/hero/products-hero.webp"
+      type="image/webp"
+    />
 
-                </div>
+    <!-- =====================================
+       FONTS & ICONS
+  ====================================== -->
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- =====================================
+       STYLESHEETS
+  ====================================== -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+
+    <!-- =====================================
+       FAVICONS
+  ====================================== -->
+
+    <link rel="icon" href="../images/logo/favicon.ico" sizes="any" />
+
+    <link rel="icon" type="image/svg+xml" href="../images/logo/favicon.svg" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../images/logo/favicon-96x96.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/logo/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="../images/logo/site.webmanifest" />
+
+    <!-- =====================================
+       MOBILE WEB APP
+  ====================================== -->
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <meta name="apple-mobile-web-app-title" content="PRICYN Bakery" />
+
+    <meta name="application-name" content="PRICYN Bakery" />
+
+    <!-- =====================================
+       LOCAL BUSINESS / BAKERY SCHEMA
+  ====================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "PRICYN Bakery",
+        "url": "https://your-domain.com",
+        "logo": "https://your-domain.com/images/logo/pb-prime.png",
+        "image": "https://your-domain.com/images/hero/products-hero.jpg",
+        "telephone": "+233538849073",
+        "email": "pricynbakery@gmail.com",
+        "priceRange": "$$",
+        "servesCuisine": "Bakery Products",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sowutuom Ofankor Road",
+          "addressLocality": "Accra",
+          "addressCountry": "GH"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "06:00",
+            "closes": "22:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/pricyn.bakery",
+          "https://www.tiktok.com/@pricyn.bakery"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+233538849073",
+          "contactType": "customer service",
+          "areaServed": "GH",
+          "availableLanguage": ["English", "Twi"]
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- =====================================
+         PAGE LOADER
+    ====================================== -->
+    <div class="page-loader">
+      <img
+        src="../images/logo/pb-prime.png"
+        alt="PRICYN Bakery"
+        class="page-loader-logo"
+      />
+    </div>
+
+    <!-- =====================================
+         HEADER / NAVIGATION
+    ====================================== -->
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="../index.html" aria-label="PRICYN Bakery home">
+          <div class="logo">
+            <img
+              src="../images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              width="180"
+              height="96"
+              decoding="async"
+            />
+          </div>
+        </a>
+
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =====================================
+           PRODUCTS HERO
+      ====================================== -->
+      <section class="products-hero">
+        <div class="products-hero-overlay">
+          <div class="products-hero-content">
+            <p class="hero-kicker">OUR PRODUCTS</p>
+            <h1>
+              Freshly Baked for<br />
+              Every Moment
+            </h1>
+            <p class="hero-description">
+              From freshly baked bread and soft rolls to delicious pastries,
+              every product is crafted daily with premium ingredients and baked
+              to perfection for you and your family.
+            </p>
+            <div class="hero-buttons">
+              <a href="contact.html" class="btn-primary">Place an Order</a>
+              <a href="#catalog" class="btn-secondary">Browse Products</a>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- =====================================
+           SIGNATURE PRODUCTS
+      ====================================== -->
+      <section class="signature-products" id="catalog">
+        <div class="signature-shell">
+          <div class="signature-top">
+            <span class="signature-kicker">OUR SIGNATURE COLLECTION</span>
+            <h2>
+              Daily Bakes,<br />
+              Made with Care
+            </h2>
+            <p>
+              Six artisan recipes baked fresh every morning with warmth,
+              consistency and the familiar PRICYN Bakery touch.
+            </p>
+          </div>
 
-        <section class="product-categories">
+          <div class="signature-stage">
+            <div class="signature-photo" id="signaturePhoto">
+              <img
+                id="featuredImage"
+                src="../images/products/bread/butter-bread.webp"
+                alt="Butter Bread"
+              />
 
-            <div class="section-header">
-
-                <h2>What We Bake</h2>
-
-                <p>
-                    Explore our wide range of freshly baked products.
+              <div class="signature-photo-copy" id="photoCopy">
+                <span id="productBadge">BAKED THIS MORNING</span>
+                <small id="productCount">01 / 06</small>
+                <h3 id="featuredTitle">Butter<br />Bread</h3>
+                <p id="featuredText">
+                  Soft, rich and buttery. A family favourite baked fresh every
+                  morning.
                 </p>
-
+                <em id="featuredMeta">Fresh every morning · Available daily</em>
+              </div>
             </div>
 
-            <div class="categories-container">
+            <div class="signature-menu">
+              <div class="signature-menu-label">
+                <span>COLLECTION</span>
+                <p>Six signature recipes</p>
+              </div>
 
-                <div class="category-card">
-
-                    <div class="category-icon">🍞</div>
-
-                    <h3>Bread Products</h3>
-
-                    <p>
-                        Fresh bread baked daily using quality ingredients
-                        and traditional techniques.
-                    </p>
-
+              <article
+                class="signature-product active"
+                data-count="01 / 06"
+                data-image="../images/products/bread/butter-bread.webp"
+                data-badge="BAKED THIS MORNING"
+                data-title="Butter<br />Bread"
+                data-text="Soft, rich and buttery. A family favourite baked fresh every morning."
+                data-meta="Fresh every morning · Available daily"
+              >
+                <span>01</span>
+                <div>
+                  <h3>Butter Bread</h3>
+                  <p>Soft, rich and buttery.</p>
                 </div>
+              </article>
 
-                <div class="category-card">
-
-                    <div class="category-icon">🥐</div>
-
-                    <h3>Rolls & Specialty Products</h3>
-
-                    <p>
-                        Soft rolls and specialty baked goods perfect
-                        for every occasion.
-                    </p>
-
+              <article
+                class="signature-product"
+                data-count="02 / 06"
+                data-image="../images/products/bread/sugar-bread.webp"
+                data-badge="SOFT GOLDEN LOAF"
+                data-title="Sugar<br />Bread"
+                data-text="Lightly sweet, golden and soft. Perfect for breakfast, tea time or everyday snacking."
+                data-meta="Family favourite · Soft texture"
+              >
+                <span>02</span>
+                <div>
+                  <h3>Sugar Bread</h3>
+                  <p>Lightly sweet and golden.</p>
                 </div>
+              </article>
 
-                <div class="category-card">
-
-                    <div class="category-icon">🧁</div>
-
-                    <h3>Pastries & Baked Goods</h3>
-
-                    <p>
-                        Delicious pastries, pies and treats crafted
-                        with care and consistency.
-                    </p>
-
+              <article
+                class="signature-product"
+                data-count="03 / 06"
+                data-image="../images/products/bread/wheat-bread.jpg"
+                data-badge="WHOLESOME RECIPE"
+                data-title="Wheat<br />Bread"
+                data-text="A wholesome brown loaf with hearty flavour, soft texture and everyday goodness."
+                data-meta="Rich flavour · Wholesome choice"
+              >
+                <span>03</span>
+                <div>
+                  <h3>Wheat Bread</h3>
+                  <p>Hearty, soft and wholesome.</p>
                 </div>
+              </article>
 
+              <article
+                class="signature-product"
+                data-count="04 / 06"
+                data-image="../images/products/bread/coconut-bread.webp"
+                data-badge="PRICYN SIGNATURE"
+                data-title="Coconut<br />Bread"
+                data-text="Soft bread with a gentle coconut aroma and a warm bakery taste customers remember."
+                data-meta="Signature bake · Soft and fragrant"
+              >
+                <span>04</span>
+                <div>
+                  <h3>Coconut Bread</h3>
+                  <p>Soft with coconut aroma.</p>
+                </div>
+              </article>
+
+              <article
+                class="signature-product"
+                data-count="05 / 06"
+                data-image="../images/products/bread/chocolate-bread.webp"
+                data-badge="SWEET TREAT"
+                data-title="Chocolate<br />Bread"
+                data-text="A sweet chocolate loaf made for children, chocolate lovers and special treats."
+                data-meta="Sweet loaf · Loved by kids"
+              >
+                <span>05</span>
+                <div>
+                  <h3>Chocolate Bread</h3>
+                  <p>Sweet, soft and chocolatey.</p>
+                </div>
+              </article>
+
+              <article
+                class="signature-product"
+                data-count="06 / 06"
+                data-image="../images/products/bread/irish-brown-bread.webp"
+                data-badge="CLASSIC BAKE"
+                data-title="Irish Brown<br />Bread"
+                data-text="A classic brown loaf with a warm homemade character and satisfying texture."
+                data-meta="Traditional recipe · Hearty texture"
+              >
+                <span>06</span>
+                <div>
+                  <h3>Irish Brown Bread</h3>
+                  <p>Classic, hearty and warm.</p>
+                </div>
+              </article>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- =====================================
+           PASTRIES & BAKED GOODS
+      ====================================== -->
+      <section class="pastry-mosaic">
+        <div class="pastry-shell">
+          <div class="pastry-intro">
+            <span>PASTRIES & BAKED GOODS</span>
+            <h2>Freshly Baked<br />Treats</h2>
+            <p>
+              From rich pies to sweet delights, our treats are baked with the
+              same care, warmth and freshness as our signature bread.
+            </p>
+            <div class="pastry-tags">
+              <small>Sweet</small><small>Savoury</small
+              ><small>Fresh Daily</small>
+            </div>
+          </div>
 
-        <section class="featured-carousel">
+          <div class="pastry-grid">
+            <article class="pastry-tile pastry-large">
+              <img
+                src="../images/products/pastries/doughnuts.webp"
+                alt="Doughnut"
+                loading="lazy"
+              />
+              <div class="pastry-overlay">
+                <span>Sweet Treat</span>
+                <h3>Doughnut</h3>
+                <p>Soft, golden and made for everyday cravings.</p>
+              </div>
+            </article>
+            <article class="pastry-tile pastry-tall">
+              <img
+                src="../images/products/pastries/meat-pie.webp"
+                alt="Meat Pie"
+                loading="lazy"
+              />
+              <div class="pastry-overlay">
+                <span>Savoury Bake</span>
+                <h3>Meat Pie</h3>
+                <p>Rich filling wrapped in a golden crust.</p>
+              </div>
+            </article>
+            <article class="pastry-tile pastry-small">
+              <img
+                src="../images/products/pastries/cookies.webp"
+                alt="Cookies"
+                loading="lazy"
+              />
+              <div class="pastry-overlay">
+                <span>Snack</span>
+                <h3>Cookies</h3>
+                <p>Simple, sweet and perfect with tea.</p>
+              </div>
+            </article>
+            <article class="pastry-tile pastry-wide">
+              <img
+                src="../images/products/pastries/cinamon-rolls.webp"
+                alt="Cinnamon Roll"
+                loading="lazy"
+              />
+              <div class="pastry-overlay">
+                <span>Bakery Favourite</span>
+                <h3>Cinnamon Roll</h3>
+                <p>Soft rolls with warm cinnamon flavour.</p>
+              </div>
+            </article>
+            <article class="pastry-tile pastry-small">
+              <img
+                src="../images/products/pastries/cones.webp"
+                alt="Scones"
+                loading="lazy"
+              />
+              <div class="pastry-overlay">
+                <span>Classic</span>
+                <h3>Scones</h3>
+                <p>Light, soft and freshly baked.</p>
+              </div>
+            </article>
+            <article class="pastry-tile pastry-wide">
+              <img
+                src="../images/products/pastries/cake-slice.webp"
+                alt="Cake Slice"
+                loading="lazy"
+              />
+              <div class="pastry-overlay">
+                <span>Sweet Slice</span>
+                <h3>Cake Slice</h3>
+                <p>A soft slice for simple celebrations.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <div class="section-header">
+      <!-- =====================================
+           ROLLS & BUNS
+      ====================================== -->
+      <section class="rolls-buns">
+        <div class="rolls-shell">
+          <div class="rolls-header">
+            <span>ROLLS & BUNS</span>
+            <h2>Rolls<br />& Buns</h2>
+            <p>
+              Soft everyday bakery favourites, freshly baked for breakfast,
+              school, work and family meals.
+            </p>
+          </div>
 
-                <h2>Featured Bread Products</h2>
+          <div class="rolls-tabs">
+            <button
+              class="roll-tab active"
+              data-image="../images/products/rolls/Burger Buns.jpg"
+              data-title="Burger Buns"
+              data-text="Soft, golden buns baked fresh for burgers, sandwiches and family meals."
+              data-label="Fresh Daily"
+            >
+              Burger Buns
+            </button>
+            <button
+              class="roll-tab"
+              data-image="../images/products/rolls/Long Rolls - mix.jpg"
+              data-title="Long Rolls"
+              data-text="Light, fluffy rolls made for breakfast, snacks and everyday meals."
+              data-label="Soft & Fluffy"
+            >
+              Long Rolls
+            </button>
+            <button
+              class="roll-tab"
+              data-image="../images/products/rolls/wheat rolls.jpg"
+              data-title="Wheat Rolls"
+              data-text="Wholesome wheat rolls with a soft texture and warm bakery flavour."
+              data-label="Whole Grain"
+            >
+              Wheat Rolls
+            </button>
+            <button
+              class="roll-tab"
+              data-image="../images/products/bread/tea-bread.jpg"
+              data-title="Tea Bread"
+              data-text="A simple family favourite, perfect with tea, porridge or breakfast."
+              data-label="Family Favourite"
+            >
+              Tea Bread
+            </button>
+          </div>
 
+          <div class="rolls-feature">
+            <div class="rolls-copy">
+              <span id="rollLabel">Fresh Daily</span>
+              <h3 id="rollTitle">Burger Buns</h3>
+              <p id="rollText">
+                Soft, golden buns baked fresh for burgers, sandwiches and family
+                meals.
+              </p>
+            </div>
+            <div class="rolls-image">
+              <img
+                id="rollImage"
+                src="../images/products/rolls/Burger Buns.webp"
+                alt="Burger Buns"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           EXPLORE OUR BAKERY
+      ====================================== -->
+      <section class="bakery-explorer" id="bakery-menu">
+        <div class="explorer-shell">
+          <div class="explorer-header">
+            <span>EXPLORE OUR BAKERY</span>
+            <h2>Everything<br />We Bake</h2>
+            <p>
+              Browse our complete bakery collection. Every product is freshly
+              baked with carefully selected ingredients and made to bring warmth
+              to every table.
+            </p>
+          </div>
+
+          <div class="explorer-navigation">
+            <button class="explorer-category active" data-category="bread">
+              Bread
+            </button>
+            <button class="explorer-category" data-category="rolls">
+              Rolls & Buns
+            </button>
+            <button class="explorer-category" data-category="pastries">
+              Pastries
+            </button>
+            <button class="explorer-category" data-category="treats">
+              Sweet Treats
+            </button>
+          </div>
+
+          <div class="explorer-feature">
+            <img
+              id="explorerImage"
+              src="../images/products/bread/butter-bread.webp"
+              alt="Butter Bread"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="explorer-products" id="explorerProducts">
+            <div class="explorer-group" data-group="bread">
+              <article class="explorer-product">
+                <h3>Butter Bread</h3>
                 <p>
-                    Freshly baked favorites loved by our customers.
+                  Rich, buttery and incredibly soft. A PRICYN Bakery favourite.
                 </p>
-
-            </div>
-
-            <div class="carousel-wrapper">
-
-                <div class="carousel-viewport">
-                    <div class="carousel-track">
-
-                        <div class="carousel-card side-card">
-
-                            <img src="../images/products/bread/butter-bread.jpg" alt="Butter Bread" loading="lazy">
-                            <h3>Butter Bread</h3>
-                            <p>Soft and rich bread baked fresh daily with a delicious buttery taste.</p>
-                        </div>
-
-                        <div class="carousel-card">
-                            <img src="../images/products/bread/sugar-bread.jpg" alt="Sugar Bread" loading="lazy">
-
-                            <h3>Sugar Bread</h3>
-
-                            <p>
-                                Lightly sweet bread loved by families and perfect for any time of day.
-                            </p>
-                        </div>
-
-                        <div class="carousel-card">
-
-                            <img src="../images/products/bread/wheat-bread.jpg" alt="Wheat Bread" loading="lazy">
-                            <h3>Wheat Bread</h3>
-                            <p>Wholesome bread offering a hearty texture and satisfying flavor.</p>
-                        </div>
-
-                        <div class="carousel-card">
-                            <img src="../images/products/bread/irish-brown-bread.jpg" alt="Irish Brown Bread" loading="lazy">
-                            <h3>Irish Brown Bread</h3>
-                            <p>A wholesome traditional bread with a rich texture and hearty flavor.</p>
-                        </div>
-
-                        <div class="carousel-card">
-                            <img src="../images/products/bread/coconut-bread.jpg" alt="Coconut Bread" loading="lazy">
-                            <h3>Coconut Bread</h3>
-                            <p>Fresh bread infused with a delightful coconut flavor and aroma.</p>
-                        </div>
-
-                        <div class="carousel-card">
-                            <img src="../images/products/bread/chocolate-bread.jpg" alt="Chocolate Bread" loading="lazy">
-                            <h3>Chocolate Bread</h3>
-                            <p>A delicious bread variation with a rich chocolate-inspired taste.</p>
-                        </div>
-                    </div>    
+                <div class="sizes">
+                  <span>Large</span><span>Medium</span><span>Small</span>
                 </div>
-
-            </div>
-
-            <div class="carousel-controls">
-
-                <button class="carousel-btn prev">&#10094;</button>
-
-                <button class="carousel-btn next">&#10095;</button>
-
-            </div>
-
-        </section>
-
-        <section class="all-products">
-
-            <div class="section-header">
-                <h2>Complete Product Catalog</h2>
-                <p>Explore our full range of freshly baked products.</p>
-            </div>
-
-            <div class="product-category-section">
-
-                <h3>Rolls & Specialty Products</h3>
-
-                <div class="catalog-grid">
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/rolls/Burger Buns.jpg" alt="Burger Buns" loading="lazy">
-
-                        <h4>Burger Buns</h4>
-
-                        <p>
-                            Soft and fluffy buns baked fresh to complement burgers and sandwiches.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/rolls/wheat rolls.jpg" alt="Wheat Rolls" loading="lazy">
-
-                        <h4>Wheat Rolls</h4>
-
-                        <p>
-                            Wholesome wheat rolls with a hearty texture and satisfying taste.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/rolls/Long Rolls - mix.jpg" alt="Long Rolls Mix" loading="lazy">
-
-                        <h4>Long Rolls Mix</h4>
-
-                        <p>
-                            A variety of freshly baked rolls perfect for meals, events and gatherings.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        
-
-            <div class="product-category-section">
-
-                <h3>Pastries & Baked Goods</h3>
-
-                <div class="catalog-grid">
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/pastries/meat-pie.jpg" alt="Meat Pie" loading="lazy">
-
-                        <h4>Meat Pie</h4>
-
-                        <p>
-                            Delicious pastry filled with a savory meat filling and baked to perfection.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/pastries/doughnuts.jpg" alt="Doughnuts" loading="lazy">
-
-                        <h4>Doughnuts</h4>
-
-                        <p>
-                            Soft, fluffy and freshly prepared doughnuts enjoyed as a delightful treat.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/pastries/cookies.jpg" alt="Cookies" loading="lazy">
-
-                        <h4>Cookies</h4>
-
-                        <p>
-                            Crisp and delicious cookies baked with care for every occasion.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="product-category-section">
-
-                <h3>Bread Products</h3>
-
-                <div class="bread-grid">
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/bread/butter-bread.jpg" alt="Butter Bread" loading="lazy">
-
-                        <h4>Butter Bread</h4>
-
-                        <p>
-                            Soft and rich bread baked fresh daily with a delicious buttery taste.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/bread/sugar-bread.jpg" alt="Sugar Bread" loading="lazy">
-
-                        <h4>Sugar Bread</h4>
-
-                        <p>
-                            Lightly sweet bread loved by families and perfect for any time of day.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/bread/wheat-bread.jpg" alt="Wheat Bread" loading="lazy">
-
-                        <h4>Wheat Bread</h4>
-
-                        <p>
-                            Wholesome bread offering a hearty texture and satisfying flavor.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/bread/coconut-bread.jpg" alt="Coconut Bread" loading="lazy">
-
-                        <h4>Coconut Bread</h4>
-
-                        <p>
-                            Fresh bread infused with a delightful coconut flavor and aroma.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/bread/chocolate-bread.jpg" alt="Chocolate Bread" loading="lazy">
-
-                        <h4>Chocolate Bread</h4>
-
-                        <p>
-                            A delicious bread variation with a rich chocolate-inspired taste.
-                        </p>
-
-                    </div>
-
-                    <div class="catalog-card">
-
-                        <img src="../images/products/bread/irish-brown-bread.jpg" alt="Irish Brown Bread" loading="lazy">
-
-                        <h4>Irish Brown Bread</h4>
-
-                        <p>
-                            A wholesome traditional bread with a rich texture and hearty flavor.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="featured-bread-card">
-
-                    <img src="../images/products/bread/jos-teabread-1.png" alt="Tea Bread" loading="lazy">
-
-                    <h4>Authentic Ghana Tea Bread</h4>
-
-                    <p>
-                        A delicious bakery favorite, perfect with tea, breakfast or an afternoon snack.
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="products-cta">
-
-            <div class="products-cta-content">
-
-                <h2>Freshly Baked Every Day</h2>
-
+              </article>
+              <article class="explorer-product">
+                <h3>Sugar Bread</h3>
                 <p>
-                    Looking for quality bread, rolls and pastries for your home,
-                    shop, event or business? Contact us today and let us serve you
-                    with freshly baked products you can trust.
+                  Lightly sweet with a soft golden crust, perfect for breakfast.
                 </p>
-
-                <a href="contact.html" class="cta-btn">
-                    Contact Us
-                </a>
-
+                <div class="sizes">
+                  <span>Large</span><span>Medium</span><span>Small</span>
+                </div>
+              </article>
+              <article class="explorer-product">
+                <h3>Wheat Bread</h3>
+                <p>Wholesome brown bread with rich flavour and soft texture.</p>
+                <div class="sizes">
+                  <span>Large</span><span>Medium</span><span>Small</span>
+                </div>
+              </article>
+              <article class="explorer-product">
+                <h3>Coconut Bread</h3>
+                <p>Soft bread infused with a delicate coconut aroma.</p>
+                <div class="sizes"><span>Available Daily</span></div>
+              </article>
+              <article class="explorer-product">
+                <h3>Chocolate Bread</h3>
+                <p>Delicious chocolate bread loved by children and families.</p>
+                <div class="sizes"><span>Available Daily</span></div>
+              </article>
             </div>
 
-        </section>
-
-        <footer class="footer">
-
-            <div class="footer-container">
-
-                <div class="footer-column">
-
-                    <a href="../index.html">
-                        <img src="../images/logo/pb-prime.png"
-                            alt="PRYCN Bakery Logo"
-                            class="footer-logo" loading="lazy">
-                    </a>
-
-                    <p>
-                        Fresh bread, pastries and snacks crafted with care,
-                        quality and consistency.
-                    </p>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/about.html">About</a></li>
-                        <li><a href="../pages/products.html">Products</a></li>
-                        <li><a href="../pages/gallery.html">Gallery</a></li>
-                        <li><a href="../pages/contact.html">Contact</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Contact Info</h3>
-
-                    <p>
-                        📞
-                        <a href="tel:0538849073">
-                            053 884 9073
-                        </a>
-                    </p>
-
-                    <p>📍  Accra - Ghana</p>
-
-                    <p>
-                        ✉️
-                        <a href="mailto:pricynbakery@gmail.com">
-                            pricynbakery@gmail.com
-                        </a>
-                    </p>
-                </div>
-
+            <div class="explorer-group hidden" data-group="rolls">
+              <article class="explorer-product">
+                <h3>Burger Buns</h3>
+                <p>Soft golden buns baked fresh for burgers and sandwiches.</p>
+                <div class="sizes"><span>Fresh Daily</span></div>
+              </article>
+              <article class="explorer-product">
+                <h3>Long Rolls</h3>
+                <p>
+                  Light, fluffy rolls perfect for breakfast and everyday meals.
+                </p>
+                <div class="sizes"><span>Fresh Daily</span></div>
+              </article>
+              <article class="explorer-product">
+                <h3>Wheat Rolls</h3>
+                <p>Wholesome wheat rolls with a soft bakery finish.</p>
+                <div class="sizes"><span>Whole Grain</span></div>
+              </article>
+              <article class="explorer-product">
+                <h3>Tea Bread</h3>
+                <p>A simple family favourite perfect with tea and breakfast.</p>
+                <div class="sizes"><span>Family Favourite</span></div>
+              </article>
             </div>
 
-            <div class="footer-bottom">
-                <p>© 2026 PRYCN Bakery. All Rights Reserved.</p>
+            <div class="explorer-group hidden" data-group="pastries">
+              <article class="explorer-product">
+                <h3>Meat Pie</h3>
+                <p>Golden savoury pastry filled with rich seasoned meat.</p>
+                <div class="sizes"><span>Fresh Daily</span></div>
+              </article>
+              <article class="explorer-product">
+                <h3>Cookies</h3>
+                <p>Freshly baked cookies with a satisfying crunch.</p>
+                <div class="sizes"><span>Tea Time</span></div>
+              </article>
+              <article class="explorer-product">
+                <h3>Cake</h3>
+                <p>
+                  Soft cakes baked for celebrations and everyday indulgence.
+                </p>
+                <div class="sizes"><span>Freshly Baked</span></div>
+              </article>
             </div>
 
-        </footer>
-        
-    <button id="backToTop" class="back-to-top">
-        ↑
+            <div class="explorer-group hidden" data-group="treats">
+              <article class="explorer-product">
+                <h3>Doughnuts</h3>
+                <p>
+                  Soft golden doughnuts finished with just the right sweetness.
+                </p>
+                <div class="sizes"><span>Fresh Daily</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           ORDER CTA
+      ====================================== -->
+      <section class="order-cta">
+        <div class="order-shell">
+          <span class="order-kicker">READY TO ORDER?</span>
+          <h2>Fresh bread is only<br />a message away.</h2>
+          <p>
+            Whether you're ordering breakfast for your family, supplying your
+            shop, or placing a bulk order for an event, we'd love to bake for
+            you.
+          </p>
+          <div class="order-actions">
+            <a
+              href="https://wa.me/233538849073"
+              class="order-btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Order on WhatsApp</a
+            >
+            <a href="tel:+233538849073" class="order-btn secondary">Call Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================
+         SITE FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <a href="../index.html">
+            <img
+              src="../images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              class="footer-logo"
+              loading="lazy"
+            />
+          </a>
+
+          <p>
+            Fresh bread, pastries and snacks crafted with care, quality and
+            consistency.
+          </p>
+
+          <div
+            class="footer-socials"
+            aria-label="PRICYN Bakery social media links"
+          >
+            <a
+              href="https://www.instagram.com/pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/products.html">Products</a></li>
+            <li><a href="../pages/gallery.html">Gallery</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Products</h3>
+
+          <ul>
+            <li><a href="../pages/products.html">Butter Bread</a></li>
+            <li><a href="../pages/products.html">Sugar Bread</a></li>
+            <li><a href="../pages/products.html">Tea Bread</a></li>
+            <li><a href="../pages/products.html">Cakes</a></li>
+            <li><a href="../pages/products.html">Meat Pies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+
+          <ul>
+            <li>
+              <a href="../pages/privacy.html"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="../pages/terms.html"> Terms &amp; Conditions </a>
+            </li>
+
+            <li>
+              <a href="../pages/delivery.html"> Delivery &amp; Collection </a>
+            </li>
+
+            <li>
+              <a href="../pages/refunds.html"> Returns &amp; Refunds </a>
+            </li>
+          </ul>
+
+          <h3 class="footer-contact-heading">Contact</h3>
+
+          <p>
+            📞
+            <a href="tel:+233538849073"> +233 53 884 9073 </a>
+          </p>
+
+          <p>📍 HQ: Sowutuom Ofankor Road</p>
+
+          <p>📍 Branch: Israel Police Junction</p>
+
+          <p>
+            ✉️
+            <a href="mailto:pricynbakery@gmail.com"> pricynbakery@gmail.com </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PRICYN Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- =====================================
+         BACK TO TOP
+    ====================================== -->
+    <button
+      id="backToTop"
+      class="back-to-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      ↑
     </button>
- 
+
+    <!-- =====================================
+         SCRIPTS
+    ====================================== -->
     <script src="../js/products.js"></script>
     <script src="../js/navigation.js"></script>
-
-    </body>
+  </body>
 </html>
-
-

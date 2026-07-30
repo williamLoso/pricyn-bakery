@@ -1,94 +1,174 @@
-const galleryImages = document.querySelectorAll(".gallery-item img");
+/* =====================================
+   GALLERY PAGE INITIALIZATION
+===================================== */
 
-const lightbox = document.querySelector(".lightbox");
+document.addEventListener("DOMContentLoaded", () => {
+  initializeGalleryLightbox();
+  initializeGalleryReveal();
+  initializeGalleryFilters();
+});
 
-const lightboxImage = document.querySelector(".lightbox-image");
+/* =====================================
+   GALLERY LIGHTBOX
+===================================== */
 
-const lightboxClose = document.querySelector(".lightbox-close");
+function initializeGalleryLightbox() {
+  const galleryImages = document.querySelectorAll(".gallery-item img");
+  const lightbox = document.querySelector(".lightbox");
+  const lightboxImage = document.querySelector(".lightbox-image");
+  const lightboxClose = document.querySelector(".lightbox-close");
 
-galleryImages.forEach(image => {
+  if (!galleryImages.length || !lightbox || !lightboxImage || !lightboxClose) {
+    return;
+  }
+
+  let lastFocusedElement = null;
+
+  const openLightbox = (image) => {
+    lastFocusedElement = document.activeElement;
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt || "Expanded gallery image";
+
+    lightbox.classList.add("active");
+    lightbox.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("lightbox-open");
+
+    lightboxClose.focus();
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+
+    lightboxImage.src = "";
+
+    document.body.classList.remove("lightbox-open");
+
+    if (lastFocusedElement instanceof HTMLElement) {
+      lastFocusedElement.focus();
+    }
+  };
+
+  galleryImages.forEach((image) => {
+    image.setAttribute("tabindex", "0");
 
     image.addEventListener("click", () => {
-
-        lightbox.classList.add("active");
-
-        lightboxImage.src = image.src;
-
+      openLightbox(image);
     });
 
-});
+    image.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openLightbox(image);
+      }
+    });
+  });
 
-lightboxClose.addEventListener("click", () => {
+  lightboxClose.addEventListener("click", closeLightbox);
 
-    lightbox.classList.remove("active");
-
-});
-
-lightbox.addEventListener("click", (e) => {
-
-    if(e.target === lightbox){
-
-        lightbox.classList.remove("active");
-
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
     }
+  });
 
-});
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
+}
 
-const galleryItems = document.querySelectorAll(".gallery-item");
+/* =====================================
+   GRADUAL GALLERY REVEAL
+===================================== */
 
-const observer = new IntersectionObserver((entries) => {
+function initializeGalleryReveal() {
+  const galleryItems = document.querySelectorAll(".gallery-item");
 
-    entries.forEach(entry => {
+  if (!galleryItems.length) return;
 
-        if(entry.isIntersecting){
+  const galleryRevealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-            entry.target.classList.add("show");
+        const item = entry.target;
 
+        const visibleItems = [...galleryItems].filter(
+          (galleryItem) => galleryItem.style.display !== "none",
+        );
+
+        const index = visibleItems.indexOf(item);
+
+        item.style.transitionDelay = `${Math.min(
+          Math.max(index, 0) * 70,
+          420,
+        )}ms`;
+
+        item.classList.add("show");
+
+        galleryRevealObserver.unobserve(item);
+      });
+    },
+    {
+      threshold: 0.15,
+    },
+  );
+
+  galleryItems.forEach((item) => {
+    galleryRevealObserver.observe(item);
+  });
+}
+
+/* =====================================
+   GALLERY FILTERS
+===================================== */
+
+function initializeGalleryFilters() {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  if (!filterButtons.length || !galleryItems.length) return;
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+
+      filterButtons.forEach((filterButton) => {
+        const isActive = filterButton === button;
+
+        filterButton.classList.toggle("active", isActive);
+
+        filterButton.setAttribute("aria-pressed", String(isActive));
+      });
+
+      galleryItems.forEach((item) => {
+        const shouldShow = filter === "all" || item.dataset.category === filter;
+
+        item.style.display = shouldShow ? "block" : "none";
+
+        if (!shouldShow) {
+          item.classList.remove("show");
+          item.style.transitionDelay = "0ms";
+          return;
         }
 
+        item.classList.remove("show");
+        item.style.transitionDelay = "0ms";
+
+        window.setTimeout(() => {
+          item.classList.add("show");
+        }, 80);
+      });
     });
+  });
 
-},{
-    threshold:0.15
-});
+  const activeButton = document.querySelector(".filter-btn.active");
 
-galleryItems.forEach(item => {
-
-    observer.observe(item);
-
-});
-
-const filterButtons = document.querySelectorAll(".filter-btn");
-
-filterButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        filterButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        const filter = button.dataset.filter;
-
-        galleryItems.forEach(item => {
-
-            if(
-                filter === "all" ||
-                item.dataset.category === filter
-            ){
-
-                item.style.display = "block";
-
-            }else{
-
-                item.style.display = "none";
-
-            }
-
-        });
-
-    });
-
-});
+  filterButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(button === activeButton));
+  });
+}

@@ -1,352 +1,605 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- =====================================
+       DOCUMENT METADATA
+  ====================================== -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Gallery | Fresh Bread, Pastries & Bakery Moments | PRICYN Bakery
+    </title>
+
+    <meta
+      name="description"
+      content="Explore the PRICYN Bakery gallery featuring fresh bread, artisan pastries, celebration cakes and behind-the-scenes moments from our bakery."
+    />
 
-        <title>Gallery | PRICYN Bakery</title>
-        
-        <meta name="description"
-            content="View our bakery gallery featuring fresh bread, pastries and moments from PRICYN Bakery.">
-        
-        <meta property="og:image" content="../images/logo/pb-prime.png">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="PRICYN Bakery" />
+    <meta name="theme-color" content="#F68900" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- =====================================
+       CANONICAL
+  ====================================== -->
+
+    <link rel="canonical" href="https://your-domain.com/pages/gallery.html" />
+
+    <!-- =====================================
+       OPEN GRAPH
+  ====================================== -->
 
-            <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Gallery | PRICYN Bakery" />
+
+    <meta
+      property="og:description"
+      content="Take a look inside PRICYN Bakery and explore our fresh bread, pastries, cakes and artisan baking."
+    />
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="../css/style.css">
+    <meta
+      property="og:image"
+      content="https://your-domain.com/images/hero/gallery-hero.webp"
+    />
 
-        <!-- Products CSS -->
-        <link rel="stylesheet" href="../css/gallery.css">
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="../images/logo/favicon.png">
-    </head>
+    <meta
+      property="og:url"
+      content="https://your-domain.com/pages/gallery.html"
+    />
 
-    <body>
-       <header>
-            <nav class="navbar">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PRICYN Bakery" />
+    <meta property="og:locale" content="en_GH" />
 
-                <a href="../index.html">
-                    <div class="logo">
-                        <img src="../images/logo/pb-prime.png" alt="PRICYN Bakery Logo" loading="lazy">
-                    </div>
-                </a>
+    <!-- =====================================
+       TWITTER / X
+  ====================================== -->
 
-                <div class="hamburger">
+    <meta name="twitter:card" content="summary_large_image" />
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <meta name="twitter:title" content="Gallery | PRICYN Bakery" />
 
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </nav>
-        </header>
-
-        <section class="gallery-hero">
-
-            <div class="gallery-hero-overlay">
-
-                <div class="gallery-hero-content">
-
-                    <h1>Gallery</h1>
-
-                    <div class="gallery-tagline">
-
-                        <span></span>
-
-                        <h2>Moments From Our Bakery</h2>
-
-                        <span></span>
-
-                    </div>
-
-                    <p>
-                        Take a closer look at our freshly baked products,
-                        bakery operations and memorable customer moments.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="gallery-categories">
-
-            <div class="section-header">
-
-                <h2>Explore Our Bakery</h2>
-
-                <p>
-                    Browse highlights from our bakery operations and freshly baked products.
-                </p>
-
-            </div>
-
-            <div class="gallery-category-cards">
-
-                <div class="gallery-category-card">
-
-                    <div class="gallery-icon">🏭</div>
-
-                    <h3>Bakery Operations</h3>
-
-                    <p>
-                        Behind-the-scenes moments from production, packaging and daily bakery activities.
-                    </p>
-
-                </div>
-
-                <div class="gallery-category-card">
-
-                    <div class="gallery-icon">🍞</div>
-
-                    <h3>Bread Collection</h3>
-
-                    <p>
-                        Explore our wide variety of freshly baked breads and specialty products.
-                    </p>
-
-                </div>
-
-                <div class="gallery-category-card">
-
-                    <div class="gallery-icon">🥐</div>
-
-                    <h3>Pastries & Treats</h3>
-
-                    <p>
-                        Delicious pastries and baked goods prepared with care and consistency.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="gallery-showcase">
-
-            <div class="section-header">
-
-                <h2>Gallery Showcase</h2>
-
-                <p>
-                    A glimpse into our bakery, our people and our products.
-                </p>
-
-            </div>
-
-            <div class="gallery-filters">
-
-                <button class="filter-btn active" data-filter="all">
-                    All
-                </button>
-
-                <button class="filter-btn" data-filter="operations">
-                    Operations
-                </button>
-
-                <button class="filter-btn" data-filter="bread">
-                    Bread
-                </button>
-
-                <button class="filter-btn" data-filter="pastries">
-                    Pastries
-                </button>
-
-            </div>
-
-            <div class="gallery-grid">
-
-                <!-- OPERATIONS -->
-
-                <div class="gallery-item" data-category="operations">
-                    <img src="../images/gallery/Production process_gallery-1.jpg" alt="Production Process" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="operations">
-                    <img src="../images/gallery/Packaging_gallery-2.jpeg" alt="Packaging" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="operations">
-                    <img src="../images/gallery/bakery_staff_gallery-3.jpeg" alt="Bakery Staff" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="operations">
-                    <img src="../images/gallery/C.E.O_holding_bread-gallery-6.jpeg" alt="CEO Holding Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="operations">
-                    <img src="../images/gallery/bakery_staff_gallery-16.jpeg" alt="Bakery Staff" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="operations">
-                    <img src="../images/gallery/bakery_staff2_gallery-3.jpeg" alt="Bakery Staff" loading="lazy">
-                </div>
-
-                <!-- BREAD -->
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/bread_rolls_gallery-4.jpg" alt="Bread Rolls" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/bread_by_menu_gallery-17.jpeg" alt="Bread Collection" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/butter_bread-gallery7.jpeg" alt="Butter Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/sugar_bread-gallery8.jpeg" alt="Sugar Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/wheat_bread_sliced-gallery9.jpeg" alt="Wheat Bread Sliced" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/wheat_bread_whole-gallery10.jpeg" alt="Wheat Bread Whole" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/tea_bread-gallery11.jpeg" alt="Tea Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/chocolate-bread_gallery12.jpg" alt="Chocolate Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/coconut-bread_gallery13.jpg" alt="Coconut Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/irish-brown-bread_gallery14.jpg" alt="Irish Brown Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/bread_gallery15.jfif" alt="Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/packaged sugar_bread_gallery-18.jpeg" alt="Packaged Sugar Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/packaged_brown_bread_gallery-19.jpeg" alt="Packaged Brown Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/packaged_bread_gallery-20.png" alt="Packaged Bread" loading="lazy">
-                </div>
-
-                <div class="gallery-item" data-category="bread">
-                    <img src="../images/gallery/packaged_butter_bread_gallery-21.png" alt="Packaged Butter Bread" loading="lazy">
-                </div>
-
-                <!-- PASTRIES -->
-
-                <div class="gallery-item" data-category="pastries">
-                    <img src="../images/gallery/pasteries_gallery-5.jpg" alt="Pastries" loading="lazy">
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="lightbox">
-
-            <span class="lightbox-close">&times;</span>
-
-            <img class="lightbox-image" src="" alt="Gallery Image">
-
-        </div>
-
-        <footer class="footer">
-
-            <div class="footer-container">
-
-                <div class="footer-column">
-
-                    <a href="../index.html">
-                        <img src="../images/logo/pb-prime.png"
-                            alt="PRYCN Bakery Logo"
-                            class="footer-logo" loading="lazy">
-                    </a>
-
-                    <p>
-                        Fresh bread, pastries and snacks crafted with care,
-                        quality and consistency.
-                    </p>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/about.html">About</a></li>
-                        <li><a href="../pages/products.html">Products</a></li>
-                        <li><a href="../pages/gallery.html">Gallery</a></li>
-                        <li><a href="../pages/contact.html">Contact</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Contact Info</h3>
-
-                    <p>
-                        📞
-                        <a href="tel:0538849073">
-                            053 884 9073
-                        </a>
-                    </p>
-                    <p>📍  Accra - Ghana</p>
-
-                    <p>
-                        ✉️
-                        <a href="mailto:pricynbakery@gmail.com">
-                            pricynbakery@gmail.com
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 PRYCN Bakery. All Rights Reserved.</p>
-            </div>
-
-        </footer>
-
-        <button id="backToTop" class="back-to-top">
-            ↑
+    <meta
+      name="twitter:description"
+      content="Explore fresh bread, pastries, cakes and bakery moments from PRICYN Bakery."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://your-domain.com/images/hero/gallery-hero.webp"
+    />
+
+    <!-- =====================================
+       PERFORMANCE
+  ====================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="preload"
+      as="image"
+      href="../images/hero/gallery-hero.webp"
+      fetchpriority="high"
+      type="image/webp"
+    />
+
+    <!-- =====================================
+       FONTS & ICONS
+  ====================================== -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- =====================================
+       STYLESHEETS
+  ====================================== -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+
+    <!-- =====================================
+       FAVICONS
+  ====================================== -->
+
+    <link rel="icon" href="../images/logo/favicon.ico" sizes="any" />
+
+    <link rel="icon" type="image/svg+xml" href="../images/logo/favicon.svg" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../images/logo/favicon-96x96.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/logo/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="../images/logo/site.webmanifest" />
+
+    <!-- =====================================
+       MOBILE WEB APP
+  ====================================== -->
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <meta name="apple-mobile-web-app-title" content="PRICYN Bakery" />
+
+    <meta name="application-name" content="PRICYN Bakery" />
+
+    <!-- =====================================
+       LOCAL BUSINESS SCHEMA
+  ====================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "PRICYN Bakery",
+        "url": "https://your-domain.com",
+        "logo": "https://your-domain.com/images/logo/pb-prime.png",
+        "image": "https://your-domain.com/images/hero/gallery-hero.webp",
+        "telephone": "+233538849073",
+        "email": "pricynbakery@gmail.com",
+        "priceRange": "$$",
+        "servesCuisine": "Bakery Products",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sowutuom Ofankor Road",
+          "addressLocality": "Accra",
+          "addressCountry": "GH"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "06:00",
+            "closes": "22:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/pricyn.bakery",
+          "https://www.tiktok.com/@pricyn.bakery"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- =====================================
+         PAGE TRANSITION LOADER
+    ====================================== -->
+
+    <div class="page-loader">
+      <img
+        src="../images/logo/pb-prime.png"
+        alt="PRICYN Bakery"
+        class="page-loader-logo"
+      />
+    </div>
+
+    <!-- =====================================
+         SITE HEADER
+    ====================================== -->
+
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="../index.html" aria-label="Go to PRICYN Bakery home page">
+          <div class="logo">
+            <img
+              src="../images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              width="180"
+              height="96"
+              decoding="async"
+            />
+          </div>
+        </a>
+
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
-        <script src="../js/gallery.js"></script>
-        <script src="../js/navigation.js"></script>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    </body>
+    <main>
+      <!-- =====================================
+           GALLERY HERO
+      ====================================== -->
+
+      <section class="gallery-hero">
+        <div class="gallery-hero-overlay">
+          <div class="gallery-hero-content">
+            <span>PRICYN BAKERY GALLERY</span>
+
+            <h1>
+              Moments From<br />
+              Our Bakery
+            </h1>
+
+            <p>
+              A look inside our bread, pastries, packaging, production process
+              and the people behind PRICYN Bakery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           GALLERY INTRODUCTION
+      ====================================== -->
+
+      <section class="gallery-intro">
+        <div class="gallery-intro-shell">
+          <span>INSIDE PRICYN</span>
+
+          <h2>
+            Freshly baked stories,<br />
+            captured in real moments.
+          </h2>
+
+          <p>
+            From early production to packaged bread ready for customers, our
+            gallery shows the care, consistency and warmth behind every bake.
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================
+           GALLERY SHOWCASE
+      ====================================== -->
+
+      <section class="gallery-showcase">
+        <div class="gallery-shell">
+          <!-- Gallery Filters -->
+
+          <div class="gallery-filter-bar" aria-label="Gallery filters">
+            <button class="filter-btn active" type="button" data-filter="all">
+              All
+            </button>
+
+            <button class="filter-btn" type="button" data-filter="operations">
+              Operations
+            </button>
+
+            <button class="filter-btn" type="button" data-filter="bread">
+              Bread
+            </button>
+
+            <button class="filter-btn" type="button" data-filter="pastries">
+              Pastries
+            </button>
+
+            <button class="filter-btn" type="button" data-filter="team">
+              Team
+            </button>
+
+            <button class="filter-btn" type="button" data-filter="packaging">
+              Packaging
+            </button>
+          </div>
+
+          <!-- Editorial Gallery Grid -->
+
+          <div class="editorial-gallery">
+            <article class="gallery-item tall" data-category="operations">
+              <img
+                src="../images/gallery/Production process_gallery-1.webp"
+                alt="PRICYN Bakery production process"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item wide" data-category="bread">
+              <img
+                src="../images/gallery/butter_bread-gallery7.webp"
+                alt="Fresh butter bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="packaging">
+              <img
+                src="../images/gallery/Packaging_gallery-2.webp"
+                alt="PRICYN Bakery bread packaging"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="team">
+              <img
+                src="../images/gallery/bakery_staff_gallery-3.webp"
+                alt="PRICYN Bakery staff"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item large" data-category="bread">
+              <img
+                src="../images/gallery/bread_by_menu_gallery-17.webp"
+                alt="PRICYN Bakery bread collection"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="pastries">
+              <img
+                src="../images/gallery/pasteries_gallery-5.webp"
+                alt="Fresh pastries"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item tall" data-category="bread">
+              <img
+                src="../images/gallery/sugar_bread-gallery8.webp"
+                alt="Fresh sugar bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="bread">
+              <img
+                src="../images/gallery/wheat_bread_sliced-gallery9.webp"
+                alt="Sliced wheat bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="bread">
+              <img
+                src="../images/gallery/chocolate-bread_gallery12.webp"
+                alt="Chocolate bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item wide" data-category="team">
+              <img
+                src="../images/gallery/C.E.O_holding_bread-gallery-6.webp"
+                alt="PRICYN Bakery founder holding bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="bread">
+              <img
+                src="../images/gallery/coconut-bread_gallery13.webp"
+                alt="Coconut bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="packaging">
+              <img
+                src="../images/gallery/packaged_butter_bread_gallery-21.webp"
+                alt="Packaged butter bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item tall" data-category="team">
+              <img
+                src="../images/gallery/bakery_staff_gallery-16.webp"
+                alt="PRICYN Bakery team"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item wide" data-category="bread">
+              <img
+                src="../images/gallery/bread_rolls_gallery-4.webp"
+                alt="Fresh bread rolls"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="bread">
+              <img
+                src="../images/gallery/irish-brown-bread_gallery14.webp"
+                alt="Irish brown bread"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="gallery-item" data-category="packaging">
+              <img
+                src="../images/gallery/packaged_bread_gallery-20.webp"
+                alt="Packaged PRICYN Bakery bread"
+                loading="lazy"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================
+         GALLERY LIGHTBOX
+    ====================================== -->
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close gallery image"
+      >
+        &times;
+      </button>
+
+      <img class="lightbox-image" src="" alt="Expanded gallery image" />
+    </div>
+
+    <!-- =====================================
+         SITE FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <a href="../index.html">
+            <img
+              src="../images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              class="footer-logo"
+              loading="lazy"
+            />
+          </a>
+
+          <p>
+            Fresh bread, pastries and snacks crafted with care, quality and
+            consistency.
+          </p>
+
+          <div
+            class="footer-socials"
+            aria-label="PRICYN Bakery social media links"
+          >
+            <a
+              href="https://www.instagram.com/pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/products.html">Products</a></li>
+            <li><a href="../pages/gallery.html">Gallery</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Products</h3>
+
+          <ul>
+            <li><a href="../pages/products.html">Butter Bread</a></li>
+            <li><a href="../pages/products.html">Sugar Bread</a></li>
+            <li><a href="../pages/products.html">Tea Bread</a></li>
+            <li><a href="../pages/products.html">Cakes</a></li>
+            <li><a href="../pages/products.html">Meat Pies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+
+          <ul>
+            <li>
+              <a href="../pages/privacy.html"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="../pages/terms.html"> Terms &amp; Conditions </a>
+            </li>
+
+            <li>
+              <a href="../pages/delivery.html"> Delivery &amp; Collection </a>
+            </li>
+
+            <li>
+              <a href="../pages/refunds.html"> Returns &amp; Refunds </a>
+            </li>
+          </ul>
+
+          <h3 class="footer-contact-heading">Contact</h3>
+
+          <p>
+            📞
+            <a href="tel:+233538849073"> +233 53 884 9073 </a>
+          </p>
+
+          <p>📍 HQ: Sowutuom Ofankor Road</p>
+
+          <p>📍 Branch: Israel Police Junction</p>
+
+          <p>
+            ✉️
+            <a href="mailto:pricynbakery@gmail.com"> pricynbakery@gmail.com </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PRICYN Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- =====================================
+         BACK TO TOP BUTTON
+    ====================================== -->
+
+    <button
+      id="backToTop"
+      class="back-to-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="../js/gallery.js"></script>
+    <script src="../js/navigation.js"></script>
+  </body>
 </html>
-
-
-
-

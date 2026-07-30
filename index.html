@@ -1,416 +1,884 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- =====================================
+       DOCUMENT METADATA
+  ====================================== -->
 
-    <title>PRICYN Bakery | Freshly Baked Goodness Every Day</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description"
-          content="PRICYN Bakery provides fresh bread, pastries and baked goods made daily with quality ingredients in Accra, Ghana.">
+    <title>PRICYN Bakery | Fresh Bread & Artisan Bakery in Accra, Ghana</title>
 
-    <meta name="keywords"
-          content="PRICYN Bakery, bakery Ghana, bakery Accra, fresh bread, pastries, doughnuts, meat pies">
+    <meta
+      name="description"
+      content="Discover freshly baked bread, pastries, cakes and artisan treats at PRICYN Bakery in Accra, Ghana. Quality ingredients, baked fresh every day."
+    />
 
-    <meta name="author"
-          content="PRICYN Bakery">
+    <meta name="author" content="PRICYN Bakery" />
+    <meta name="theme-color" content="#F68900" />
+    <meta name="color-scheme" content="light" />
 
-    <meta property="og:title" content="PRICYN Bakery">
-    <meta property="og:description" content="Freshly baked bread, pastries and bakery products made daily.">
-    <meta property="og:image" content="images/logo/pb-prime.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-domain.com">
-    <meta name="theme-color" content="#F68900">
+    <!-- =====================================
+       CANONICAL
+  ====================================== -->
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://your-domain.com/" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- =====================================
+       OPEN GRAPH
+  ====================================== -->
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta
+      property="og:title"
+      content="PRICYN Bakery | Fresh Bread & Artisan Bakery in Accra"
+    />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo/favicon.png">
-</head>
+    <meta
+      property="og:description"
+      content="Freshly baked bread, pastries, cakes and artisan treats made daily at PRICYN Bakery in Accra, Ghana."
+    />
 
-<body>
+    <meta
+      property="og:image"
+      content="https://your-domain.com/images/hero/hero.jpg"
+    />
+
+    <meta property="og:url" content="https://your-domain.com/" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="PRICYN Bakery" />
+
+    <meta property="og:locale" content="en_GH" />
+
+    <!-- =====================================
+       TWITTER
+  ====================================== -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="PRICYN Bakery | Fresh Bread & Artisan Bakery in Accra"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Freshly baked bread, pastries, cakes and artisan treats made daily at PRICYN Bakery in Accra, Ghana."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://your-domain.com/images/hero/hero.jpg"
+    />
+
+    <!-- =====================================
+       PERFORMANCE
+  ====================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero/hero.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
+    <!-- =====================================
+       FONTS
+  ====================================== -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================
+       ICONS
+  ====================================== -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- =====================================
+       STYLES
+  ====================================== -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- =====================================
+       FAVICONS
+  ====================================== -->
+
+    <link rel="icon" href="images/logo/favicon.ico" sizes="any" />
+
+    <link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/logo/favicon-96x96.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/logo/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="images/logo/site.webmanifest" />
+
+    <!-- =====================================
+       MOBILE WEB APP
+  ====================================== -->
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <meta name="apple-mobile-web-app-title" content="PRICYN Bakery" />
+
+    <meta name="application-name" content="PRICYN Bakery" />
+
+    <!-- =====================================
+       LOCAL BUSINESS SCHEMA
+  ====================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "PRICYN Bakery",
+        "url": "https://your-domain.com",
+        "logo": "https://your-domain.com/images/logo/pb-prime.png",
+        "image": "https://your-domain.com/images/hero/hero.jpg",
+        "telephone": "+233538849073",
+        "email": "pricynbakery@gmail.com",
+        "priceRange": "$$",
+        "servesCuisine": "Bakery Products",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sowutuom Ofankor Road",
+          "addressLocality": "Accra",
+          "addressCountry": "GH"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "06:00",
+            "closes": "22:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/pricyn.bakery",
+          "https://www.tiktok.com/@pricyn.bakery"
+        ]
+      }
+    </script>
+  </head>
+
+  <body id="top">
+    <!-- =====================================
+         PAGE TRANSITION LOADER
+    ====================================== -->
+
+    <div class="page-loader">
+      <img
+        src="images/logo/pb-prime.png"
+        alt="PRICYN Bakery"
+        class="page-loader-logo"
+      />
+    </div>
+
+    <!-- =====================================
+         SITE HEADER
+    ====================================== -->
 
     <header>
-        <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html" class="logo" aria-label="PRICYN Bakery home">
+          <img
+            src="../images/logo/pb-prime.png"
+            alt="PRICYN Bakery Logo"
+            width="180"
+            height="96"
+            decoding="async"
+          />
+        </a>
 
-            <a href="index.html" class="logo">
-                <img src="images/logo/pb-prime.png"
-                     alt="PRICYN Bakery Logo" loading="lazy">
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/products.html">Products</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li class="nav-cta">
+            <a
+              href="https://wa.me/233538849073?text=Hello%20PRICYN%20Bakery,%20I%20would%20like%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Place an Order
             </a>
-
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/products.html">Products</a></li>
-                <li><a href="pages/gallery.html">Gallery</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-    <section class="hero">
+      <!-- =====================================
+           PREMIUM HERO
+      ====================================== -->
 
-    <div class="hero-overlay">
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-text reveal-left">
+            <span class="hero-kicker">FRESHLY BAKED IN ACCRA</span>
 
-        <div class="hero-content">
+            <h1>
+              Warm From Our Ovens.
+              <span>Made for Every Table.</span>
+            </h1>
 
-            <h1>Fresh Bread. Warm Moments. Every Day.</h1>
-
-            <p>
-                Quality bread, pastries and snacks crafted with care,
-                freshness and consistency for every customer.
+            <p class="hero-description">
+              Fresh bread, soft rolls and handcrafted pastries baked daily with
+              quality ingredients, familiar flavour and the care every family
+              deserves.
             </p>
 
             <div class="hero-buttons">
-
-                <a href="pages/products.html" class="btn-primary">
-                    View Products
-                </a>
-
-                <a href="pages/contact.html" class="btn-secondary">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <section class="featured-products">
-
-        <div class="section-header">
-            <h2>Our Best Sellers</h2>
-            <p>Freshly baked favorites loved by our customers.</p>
-        </div>
-
-        <div class="products-container">
-
-            <div class="product-card">
-                <img src="images/products/bread.jfif" alt="Bread" loading="lazy">
-
-                <h3>Fresh Bread</h3>
-
-                <p>
-                    Soft, fresh and baked daily using quality ingredients.
-                </p>
-            </div>
-
-            <div class="product-card">
-                <img src="images/products/cake.jpg" alt="Cake" loading="lazy">
-
-                <h3>Cakes</h3>
-
-                <p>
-                    Delicious cakes perfect for celebrations and special moments.
-                </p>
-            </div>
-
-            <div class="product-card">
-                <img src="images/products/meat-pie.jpg" alt="Meat Pie" loading="lazy">
-
-                <h3>Meat Pie</h3>
-
-                <p>
-                    Golden, flaky and filled with rich savory goodness.
-                </p>
-            </div>
-
-            <div class="product-card">
-                <img src="images/products/buns.jpg" alt="Buns" loading="lazy">
-
-                <h3>Buns & Rolls</h3>
-
-                <p>
-                    Soft and tasty treats available in multiple flavors.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="why-us">
-
-        <div class="section-header">
-            <h2>Why Choose PRICYN Bakery?</h2>
-            <p>Committed to quality, freshness and customer satisfaction.</p>
-        </div>
-
-        <div class="features-container">
-
-            <div class="feature-card">
-                <div class="feature-icon">🍞</div>
-                <h3>Fresh Daily</h3>
-                <p>
-                    Every product is baked fresh to ensure the best taste and quality.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">⭐</div>
-                <h3>Quality Ingredients</h3>
-                <p>
-                    We carefully select ingredients that deliver great flavor and consistency.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">💰</div>
-                <h3>Affordable Prices</h3>
-                <p>
-                    Enjoy premium baked goods without paying premium prices.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">❤️</div>
-                <h3>Customer Satisfaction</h3>
-                <p>
-                    We focus on delivering products our customers can trust and enjoy.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="about-preview">
-
-        <div class="about-image">
-            <img src="images/gallery/C.E.O_holding_bread-gallery-6.jpeg" alt="PRICYN Bakery" loading="lazy">
-        </div>
-
-        <div class="about-content">
-
-            <h2>About PRICYN Bakery</h2>
-
-            <p>
-                PRICYN Bakery is dedicated to producing fresh, high-quality bread,
-                pastries and snacks for individuals, families and businesses.
-            </p>
-
-            <p>
-                We combine quality ingredients, careful preparation and consistent
-                baking standards to deliver products our customers can enjoy every day.
-            </p>
-
-            <p>
-                From freshly baked bread to delicious pastries and snacks, our goal
-                is to provide freshness, taste and value in every product we make.
-            </p>
-
-            <a href="pages/about.html" class="btn-primary about-btn">
-                Learn More
-            </a>
-
-        </div>
-
-    </section>
-
-    <section class="gallery-preview">
-
-        <div class="section-header">
-            <h2>Our Gallery</h2>
-            <p>Take a look at some of our freshly baked creations.</p>
-        </div>
-
-        <div class="gallery-grid">
-
-            <img src="images/gallery/gallery1.jpg" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/gallery2.jpg" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/gallery3.jpg" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/gallery4.webp" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/gallery5.jpg" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/gallery6.jfif" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/gallery7.jfif" alt="Bakery Product" loading="lazy">
-
-            <img src="images/gallery/packaged_brown_bread_gallery-19.jpeg" alt="Bakery Product" loading="lazy">
-
-        </div>
-
-    </section>
-
-    <section class="testimonials">
-
-        <div class="section-header">
-            <h2>What Our Customers Say</h2>
-            <p>We are committed to delivering quality products and great experiences.</p>
-        </div>
-
-        <div class="testimonial-container">
-
-            <div class="testimonial-card">
-                <p>
-                    "The bread is always fresh and delicious. My family loves it."
-                </p>
-
-                <h4>— Tsidi Beans.</h4>
-            </div>
-
-            <div class="testimonial-card">
-                <p>
-                    "Excellent customer service and consistently high-quality products."
-                </p>
-
-                <h4>— Kojo A. Ntim.</h4>
-            </div>
-
-            <div class="testimonial-card">
-                <p>
-                    "The pastries are amazing. Definitely one of my favorite bakeries."
-                </p>
-
-                <h4>— Lady Tamakloe.</h4>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="contact-cta">
-
-        <h2>Ready to Place an Order?</h2>
-
-        <p>
-            Contact us today for fresh bread, pastries, cakes and more.
-        </p>
-
-        <div class="cta-buttons">
-
-            <a href="tel:+233538849073" class="btn-primary cta-primary">
-                Call Now
-            </a>
-
-            <a href="https://wa.me/233538849073?text=Hello%20PRICYN%20Bakery,%20I%20would%20like%20to%20place%20an%20order."
+              <a href="pages/products.html" class="btn-primary">
+                Explore Our Bakes
+              </a>
+
+              <a
+                href="https://wa.me/233538849073?text=Hello%20PRICYN%20Bakery,%20I%20would%20like%20to%20place%20an%20order."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn-primary cta-primary">
-                WhatsApp Us
-            </a>
+                class="btn-secondary"
+              >
+                Order on WhatsApp
+              </a>
+            </div>
 
-            <a href="pages/contact.html" class="btn-secondary cta-secondary">
-                Contact Us
-            </a>
+            <div class="hero-features" aria-label="PRICYN Bakery highlights">
+              <span>Baked Fresh Daily</span>
+              <span>Quality Ingredients</span>
+              <span>Made in Accra</span>
+            </div>
+          </div>
 
+          <div class="hero-visual reveal-right">
+            <div class="hero-image">
+              <img
+                src="images/hero/hero.webp"
+                alt="Fresh bread and pastries from PRICYN Bakery"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </div>
+
+            <div class="hero-note">
+              <span class="hero-note-icon">
+                <i class="fa-solid fa-bread-slice"></i>
+              </span>
+
+              <div>
+                <strong>Fresh This Morning</strong>
+                <p>Soft, warm and ready for your table.</p>
+              </div>
+            </div>
+
+            <div class="hero-stamp" aria-hidden="true">
+              <span>ƐHYE A</span>
+              <strong>NA ƐDƐ!</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           SIGNATURE COLLECTION
+      ====================================== -->
+
+      <section class="featured-products">
+        <div class="featured-shell">
+          <div class="featured-heading reveal">
+            <div>
+              <span class="section-kicker">OUR SIGNATURE COLLECTION</span>
+              <h2>Everyday Favourites, Baked With Care.</h2>
+            </div>
+
+            <a href="pages/products.html" class="section-link">
+              Explore all products
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="featured-layout">
+            <article class="featured-main-card reveal-left">
+              <div class="featured-main-image">
+                <img
+                  src="images/products/bread.jfif"
+                  alt="Fresh PRICYN Bakery bread"
+                  loading="lazy"
+                />
+                <span class="featured-badge">Best Seller</span>
+              </div>
+
+              <div class="featured-main-copy">
+                <span>01</span>
+                <div>
+                  <h3>Fresh Bread</h3>
+                  <p>
+                    Soft, golden and baked every morning for breakfast, school,
+                    work and the family table.
+                  </p>
+                  <a href="pages/products.html">Discover our bread</a>
+                </div>
+              </div>
+            </article>
+
+            <div class="featured-side-grid">
+              <article class="featured-small-card reveal stagger-1">
+                <img
+                  src="images/products/cake.jpg"
+                  alt="Celebration cake from PRICYN Bakery"
+                  loading="lazy"
+                />
+                <div>
+                  <span>02 · Celebrations</span>
+                  <h3>Cakes</h3>
+                  <p>Beautiful cakes made for memorable moments.</p>
+                </div>
+              </article>
+
+              <article class="featured-small-card reveal stagger-2">
+                <img
+                  src="images/products/meat-pie.jpg"
+                  alt="Fresh meat pie from PRICYN Bakery"
+                  loading="lazy"
+                />
+                <div>
+                  <span>03 · Savoury</span>
+                  <h3>Meat Pies</h3>
+                  <p>Golden pastry with a rich, satisfying filling.</p>
+                </div>
+              </article>
+
+              <article class="featured-small-card reveal stagger-3">
+                <img
+                  src="images/products/buns.jpg"
+                  alt="Fresh buns and rolls from PRICYN Bakery"
+                  loading="lazy"
+                />
+                <div>
+                  <span>04 · Family Favourite</span>
+                  <h3>Buns & Rolls</h3>
+                  <p>Soft everyday favourites for breakfast and snacks.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           WHY PRICYN
+      ====================================== -->
+
+      <section class="why-us">
+        <div class="why-shell">
+          <div class="why-copy reveal-left">
+            <span class="section-kicker">WHY PRICYN</span>
+            <h2>Good Bread Should Feel Familiar.</h2>
+            <p>
+              We keep things simple: thoughtful recipes, careful baking and
+              products that families can enjoy every day.
+            </p>
+
+            <a href="pages/about.html" class="text-link">
+              Learn about our bakery
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="why-list">
+            <article class="why-item reveal stagger-1">
+              <span>01</span>
+              <div>
+                <h3>Baked Fresh Daily</h3>
+                <p>
+                  Our ovens are active throughout the day so every customer can
+                  enjoy better freshness and flavour.
+                </p>
+              </div>
+            </article>
+
+            <article class="why-item reveal stagger-2">
+              <span>02</span>
+              <div>
+                <h3>Quality Ingredients</h3>
+                <p>
+                  Carefully selected ingredients help us maintain a consistent
+                  taste, soft texture and dependable quality.
+                </p>
+              </div>
+            </article>
+
+            <article class="why-item reveal stagger-3">
+              <span>03</span>
+              <div>
+                <h3>Made for Families</h3>
+                <p>
+                  From everyday loaves to special treats, our range is designed
+                  for real homes, real meals and real moments.
+                </p>
+              </div>
+            </article>
+
+            <article class="why-item reveal stagger-4">
+              <span>04</span>
+              <div>
+                <h3>Premium Yet Affordable</h3>
+                <p>
+                  We combine good presentation and quality baking with prices
+                  that remain approachable.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           OUR STORY
+      ====================================== -->
+
+      <section class="about-preview">
+        <div class="about-image reveal-left">
+          <img
+            src="images/gallery/C.E.O_holding_bread-gallery-6.jpeg"
+            alt="PRICYN Bakery founder holding fresh bread"
+            loading="lazy"
+          />
         </div>
 
-    </section>
+        <div class="about-content reveal-right">
+          <span class="section-kicker">OUR STORY</span>
 
+          <h2>
+            Built Around Freshness,
+            <span>Care and Community.</span>
+          </h2>
+
+          <p class="about-lead">
+            PRICYN Bakery began with one simple belief: great bread should be
+            fresh, dependable and easy for every family to enjoy.
+          </p>
+
+          <p>
+            From our early days to today, we have continued to grow around the
+            same promise. We bake with care, serve with warmth and work every
+            day to make quality bakery products more accessible.
+          </p>
+
+          <div class="about-actions">
+            <a href="pages/about.html" class="btn-primary"> Read Our Story </a>
+
+            <div class="about-stat">
+              <strong>Fresh Daily</strong>
+              <span>Made with the PRICYN touch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           FRESH FROM THE OVEN
+      ====================================== -->
+
+      <section class="oven-showcase">
+        <div class="oven-shell">
+          <div class="section-header reveal">
+            <span class="section-kicker">FRESH FROM THE OVEN</span>
+            <h2>Something for Every Craving.</h2>
+            <p>
+              From breakfast favourites to afternoon treats, our bakery is
+              filled with something worth looking forward to.
+            </p>
+          </div>
+
+          <div class="oven-grid">
+            <article class="oven-card oven-card-large reveal-left">
+              <img
+                src="images/gallery/butter_bread-gallery7.jpeg"
+                alt="Fresh butter bread"
+                loading="lazy"
+              />
+              <div class="oven-card-copy">
+                <span>Fresh Bread</span>
+                <h3>Soft, Golden and Made Every Morning.</h3>
+                <a href="pages/products.html">View the bread collection</a>
+              </div>
+            </article>
+
+            <article class="oven-card reveal stagger-1">
+              <img
+                src="images/gallery/pasteries_gallery-5.jpg"
+                alt="Fresh pastries"
+                loading="lazy"
+              />
+              <div class="oven-card-copy">
+                <span>Pastries</span>
+                <h3>Little Treats, Big Comfort.</h3>
+              </div>
+            </article>
+
+            <article class="oven-card reveal stagger-2">
+              <img
+                src="images/gallery/bread_rolls_gallery-4.jpg"
+                alt="Fresh bread rolls"
+                loading="lazy"
+              />
+              <div class="oven-card-copy">
+                <span>Rolls & Buns</span>
+                <h3>Made for Breakfast and Everyday Meals.</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           GALLERY PREVIEW
+      ====================================== -->
+
+      <section class="gallery-preview" id="gallery">
+        <div class="gallery-intro-row reveal">
+          <div>
+            <span class="section-kicker">INSIDE PRICYN</span>
+            <h2>Real Bakes. Real People. Real Moments.</h2>
+          </div>
+
+          <a href="pages/gallery.html" class="section-link">
+            View full gallery
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="gallery-editorial">
+          <figure class="gallery-tile gallery-tile-tall reveal-left">
+            <img
+              src="images/gallery/gallery4.webp"
+              alt="Fresh bakery products"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-tile reveal stagger-1">
+            <img
+              src="images/gallery/gallery5.jpg"
+              alt="Freshly baked bread"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-tile gallery-tile-wide reveal stagger-2">
+            <img
+              src="images/gallery/gallery6.jpg"
+              alt="PRICYN Bakery products"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-tile reveal stagger-3">
+            <img
+              src="images/gallery/gallery3.jpg"
+              alt="Bakery production moment"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="gallery-tile gallery-tile-wide reveal-right">
+            <img
+              src="images/gallery/gallery8.jpeg"
+              alt="Fresh bread from PRICYN Bakery"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- =====================================
+           TESTIMONIALS
+      ====================================== -->
+
+      <section class="testimonials">
+        <div class="testimonial-shell">
+          <div class="testimonial-heading reveal-left">
+            <span class="section-kicker">CUSTOMER STORIES</span>
+            <h2>Made With Care. Remembered With Love.</h2>
+            <p>
+              Our customers return for the freshness, consistency and warm
+              service that make every visit feel familiar.
+            </p>
+          </div>
+
+          <div class="testimonial-list">
+            <article class="testimonial-card reveal stagger-1">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p>
+                “The bread is always fresh and delicious. My family loves it.”
+              </p>
+              <div class="testimonial-author">
+                <span>TB</span>
+                <div>
+                  <strong>Tsidi Beans</strong>
+                  <small>Regular customer</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal stagger-2">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p>
+                “Excellent customer service and consistently high-quality
+                products.”
+              </p>
+              <div class="testimonial-author">
+                <span>YT</span>
+                <div>
+                  <strong>Yaagani Tsatsu</strong>
+                  <small>Happy customer</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal stagger-3">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p>
+                “The pastries are amazing. Definitely one of my favourite
+                bakeries.”
+              </p>
+              <div class="testimonial-author">
+                <span>LT</span>
+                <div>
+                  <strong>Lady Tamakloe</strong>
+                  <small>Loyal customer</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           FINAL ORDER CTA
+      ====================================== -->
+
+      <section class="contact-cta reveal">
+        <div class="contact-cta-inner">
+          <span class="section-kicker">READY TO ORDER?</span>
+
+          <h2>Fresh Bread Is Only a Message Away.</h2>
+
+          <p>
+            Place an order, ask about availability or speak with our team today.
+          </p>
+
+          <div class="cta-buttons">
+            <a
+              href="https://wa.me/233538849073?text=Hello%20PRICYN%20Bakery,%20I%20would%20like%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary cta-primary"
+            >
+              Order on WhatsApp
+            </a>
+
+            <a href="tel:+233538849073" class="btn-secondary cta-secondary">
+              Call +233 53 884 9073
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- =====================================
+         SITE FOOTER
+    ====================================== -->
+
     <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <a href="index.html">
+            <img
+              src="images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              class="footer-logo"
+              loading="lazy"
+            />
+          </a>
 
-        <div class="footer-container">
+          <p>
+            Fresh bread, pastries and snacks crafted with care, quality and
+            consistency.
+          </p>
 
-            <div class="footer-column">
+          <div
+            class="footer-socials"
+            aria-label="PRICYN Bakery social media links"
+          >
+            <a
+              href="https://www.instagram.com/pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
 
-                <a href="index.html">
-                    <img src="images/logo/pb-prime.png"
-                        alt="PRICYN Bakery Logo"
-                        class="footer-logo" loading="lazy">
-                </a>
-
-                <p>
-                    Fresh bread, pastries and snacks crafted with care,
-                    quality and consistency.
-                </p>
-
-            </div>
-
-            <div class="footer-column">
-
-                <h3>Quick Links</h3>
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/products.html">Products</a></li>
-                    <li><a href="pages/gallery.html">Gallery</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
-                </ul>
-
-            </div>
-
-            <div class="footer-column">
-
-                <h3>Contact Info</h3>
-
-                <p>
-                    📞
-                    <a href="tel:0538849073">
-                        053 884 9073
-                    </a>
-                </p>
-
-                <p>📍  Accra - Ghana</p>
-
-                <p>
-                    ✉️
-                    <a href="mailto:pricynbakery@gmail.com">
-                        pricynbakery@gmail.com
-                    </a>
-                </p>
-
-                <p>
-                    💬
-                    <a href="https://wa.me/233538849073"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                        WhatsApp Us
-                    </a>
-                </p>
-            </div>
-
+            <a
+              href="https://www.tiktok.com/@pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 PRICYN Bakery. All Rights Reserved.</p>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
         </div>
 
+        <div class="footer-column">
+          <h3>Our Products</h3>
+
+          <ul>
+            <li><a href="pages/products.html">Butter Bread</a></li>
+            <li><a href="pages/products.html">Sugar Bread</a></li>
+            <li><a href="pages/products.html">Tea Bread</a></li>
+            <li><a href="pages/products.html">Cakes</a></li>
+            <li><a href="pages/products.html">Meat Pies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+
+          <ul>
+            <li>
+              <a href="pages/privacy.html"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="pages/terms.html"> Terms &amp; Conditions </a>
+            </li>
+
+            <li>
+              <a href="pages/delivery.html"> Delivery &amp; Collection </a>
+            </li>
+
+            <li>
+              <a href="pages/refunds.html"> Returns &amp; Refunds </a>
+            </li>
+          </ul>
+
+          <h3 class="footer-contact-heading">Contact</h3>
+
+          <p>
+            📞
+            <a href="tel:+233538849073"> +233 53 884 9073 </a>
+          </p>
+
+          <p>📍 HQ: Sowutuom Ofankor Road</p>
+
+          <p>📍 Branch: Israel Police Junction</p>
+
+          <p>
+            ✉️
+            <a href="mailto:pricynbakery@gmail.com"> pricynbakery@gmail.com </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PRICYN Bakery. All Rights Reserved.</p>
+      </div>
     </footer>
 
-    <button id="backToTop" class="back-to-top">
-    ↑
+    <!-- =====================================
+         FLOATING ACTIONS
+    ====================================== -->
+
+    <button
+      id="backToTop"
+      class="back-to-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      ↑
     </button>
 
-    <a href="https://wa.me/233538849073?text=Hello%20PRICYN%20Bakery,%20I%20would%20like%20to%20place%20an%20order."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp">
-
-        <i class="fab fa-whatsapp"></i>
-
+    <a
+      href="https://wa.me/233538849073?text=Hello%20PRICYN%20Bakery,%20I%20would%20like%20to%20place%20an%20order."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with PRICYN Bakery on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="js/navigation.js"></script>
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
 
-    </body>
+    <script src="js/navigation.js"></script>
+  </body>
 </html>

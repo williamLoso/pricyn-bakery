@@ -1,486 +1,695 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- =====================================
+       DOCUMENT METADATA
+  ====================================== -->
 
-        <title>Contact | PRICYN Bakery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="description"
-          content="Contact PRICYN Bakery for orders, enquiries, customer support and information about our fresh bread, pastries and bakery products in Accra, Ghana.">
+    <title>Contact PRICYN Bakery | Orders, Enquiries & Bakery Location</title>
 
-        <meta name="keywords"
-            content="PRICYN Bakery, bakery Accra, bread Ghana, pastries, contact bakery, fresh bread">
+    <meta
+      name="description"
+      content="Contact PRICYN Bakery to place an order, ask a question or visit our bakery in Accra. We're always ready to serve you with freshly baked goodness."
+    />
 
-        <meta name="author"
-            content="PRICYN Bakery">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="PRICYN Bakery" />
+    <meta name="theme-color" content="#F68900" />
+    <meta name="color-scheme" content="light" />
 
-        <meta property="og:image" content="../images/logo/pb-prime.png">
+    <!-- =====================================
+       CANONICAL
+  ====================================== -->
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://your-domain.com/pages/contact.html" />
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- =====================================
+       OPEN GRAPH
+  ====================================== -->
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="../css/style.css">
+    <meta property="og:title" content="Contact PRICYN Bakery" />
 
-        <!-- Products CSS -->
-        <link rel="stylesheet" href="../css/contact.css">
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="../images/logo/favicon.png">
-    </head>
+    <meta
+      property="og:description"
+      content="Place an order, send an enquiry or visit PRICYN Bakery in Accra for fresh bread, pastries and bakery products."
+    />
 
-    <body id="top">
-       <header>
-            <nav class="navbar">
+    <meta
+      property="og:image"
+      content="https://your-domain.com/images/hero/contact-hero.jpeg"
+    />
 
-                <a href="../index.html">
-                    <div class="logo">
-                        <img src="../images/logo/pb-prime.png" alt="PRICYN Bakery Logo" loading="lazy">
-                    </div>
-                </a>
+    <meta
+      property="og:url"
+      content="https://your-domain.com/pages/contact.html"
+    />
 
-                <div class="hamburger">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PRICYN Bakery" />
+    <meta property="og:locale" content="en_GH" />
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <!-- =====================================
+       TWITTER / X
+  ====================================== -->
 
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Contact PRICYN Bakery" />
+
+    <meta
+      name="twitter:description"
+      content="Contact PRICYN Bakery for orders, enquiries and bakery location information."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://your-domain.com/images/hero/contact-hero.jpeg"
+    />
+
+    <!-- =====================================
+       PERFORMANCE
+  ====================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="preload"
+      as="image"
+      href="../images/hero/contact-hero.webp"
+      fetchpriority="high"
+      type="image/webp"
+    />
+
+    <!-- =====================================
+       FONTS & ICONS
+  ====================================== -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- =====================================
+       STYLESHEETS
+  ====================================== -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <!-- =====================================
+       FAVICONS
+  ====================================== -->
+
+    <link rel="icon" href="../images/logo/favicon.ico" sizes="any" />
+
+    <link rel="icon" type="image/svg+xml" href="../images/logo/favicon.svg" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../images/logo/favicon-96x96.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/logo/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="../images/logo/site.webmanifest" />
+
+    <!-- =====================================
+       MOBILE WEB APP
+  ====================================== -->
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <meta name="apple-mobile-web-app-title" content="PRICYN Bakery" />
+
+    <meta name="application-name" content="PRICYN Bakery" />
+
+    <!-- =====================================
+       LOCAL BUSINESS / BAKERY SCHEMA
+  ====================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "PRICYN Bakery",
+        "url": "https://your-domain.com",
+        "logo": "https://your-domain.com/images/logo/pb-prime.png",
+        "image": "https://your-domain.com/images/hero/contact-hero.jpeg",
+        "telephone": "+233538849073",
+        "email": "pricynbakery@gmail.com",
+        "priceRange": "$$",
+        "servesCuisine": "Bakery Products",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sowutuom Ofankor Road",
+          "addressLocality": "Accra",
+          "addressCountry": "GH"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "06:00",
+            "closes": "22:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/pricyn.bakery",
+          "https://www.tiktok.com/@pricyn.bakery"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+233538849073",
+          "contactType": "customer service",
+          "areaServed": "GH",
+          "availableLanguage": ["English", "Twi"]
+        }
+      }
+    </script>
+  </head>
+
+  <body id="top">
+    <div class="page-loader">
+      <img
+        src="../images/logo/pb-prime.png"
+        alt="PRICYN Bakery"
+        class="page-loader-logo"
+      />
+    </div>
+
+    <header>
+      <nav class="navbar">
+        <a href="../index.html">
+          <div class="logo">
+            <img
+              src="../images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              width="180"
+              height="96"
+              decoding="async"
+            />
+          </div>
+        </a>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-hero">
+      <div class="contact-hero-shell">
+        <div class="contact-hero-content">
+          <span class="contact-kicker"> CONTACT </span>
+
+          <h1>
+            Let's Start<br />
+            A Conversation
+          </h1>
+
+          <p>
+            Whether you're placing an order, making an enquiry, or looking for a
+            wholesale partnership, we'd love to hear from you.
+          </p>
+
+          <div class="contact-hero-actions">
+            <a href="tel:+233538849073" class="hero-btn primary"> Call Us </a>
+
+            <a
+              href="https://wa.me/233538849073"
+              target="_blank"
+              class="hero-btn secondary"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="contact-info-shell">
+        <div class="contact-info-header">
+          <span>CONTACT METHODS</span>
+
+          <h2>However You Prefer, We're Here To Help</h2>
+
+          <p>
+            Whether you'd like to place an order, ask a question, or simply say
+            hello, choose the option that's most convenient for you.
+          </p>
+        </div>
+
+        <div class="contact-cards">
+          <a href="tel:+233538849073" class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+
+            <h3>Call Us</h3>
+
+            <p>Speak directly with our team during business hours.</p>
+          </a>
+
+          <a
+            href="https://wa.me/233538849073"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <h3>WhatsApp</h3>
+
+            <p>Send us a quick message and we'll respond promptly.</p>
+          </a>
+
+          <a href="mailto:pricynbakery@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+
+            <h3>Email</h3>
+
+            <p>For enquiries, partnerships and wholesale requests.</p>
+          </a>
+
+          <a href="#directions-section" class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>Visit Us</h3>
+
+            <p>Stop by and experience fresh bread straight from the oven.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="directions-section" class="directions-section">
+      <div class="visit-shell">
+        <div class="visit-grid">
+          <div class="visit-image">
+            <img
+              src="../images/about/about-story.jpeg"
+              alt="PRICYN Bakery"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="visit-content">
+            <span>VISIT THE BAKERY</span>
+
+            <h2>Fresh Bread Is Best Enjoyed Fresh From The Oven</h2>
+
+            <p>
+              We'd love to welcome you to PRICYN Bakery. Stop by for freshly
+              baked bread, pastries and warm customer service every production
+              day.
+            </p>
+
+            <div class="visit-details">
+              <div class="visit-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                  <strong>Location</strong>
+
+                  <p>Israel, Lapaz, Accra, Ghana</p>
                 </div>
+              </div>
 
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+              <div class="visit-item">
+                <i class="fa-solid fa-phone"></i>
 
-            </nav>
-        </header>
+                <div>
+                  <strong>Phone</strong>
 
-        <section class="contact-hero">
-
-            <div class="contact-hero-overlay">
-
-                <div class="contact-hero-content">
-
-                    <h1>Contact Us</h1>
-
-                    <div class="contact-tagline">
-
-                        <span></span>
-
-                        <h2>We're Ready To Serve You</h2>
-
-                        <span></span>
-
-                    </div>
-
-                    <p>
-                        Reach out to us for orders, enquiries, partnerships
-                        and information about our products and services.
-                    </p>
-
+                  <p>+233 53 884 9073</p>
                 </div>
+              </div>
 
+              <div class="visit-item">
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                  <strong>Email</strong>
+
+                  <p>pricynbakery@gmail.com</p>
+                </div>
+              </div>
             </div>
 
-        </section>
+            <a
+              href="https://maps.app.goo.gl/P2nhDX7YepLwWSyS7"
+              class="visit-btn"
+              target="_blank"
+            >
+              Get Directions
+            </a>
+          </div>
+        </div>
 
-        <section class="contact-info">
+        <div class="visit-map">
+          <iframe
+            title="PRICYN Bakery Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2300.9624991061187!2d-0.2689945829757867!3d5.630945231390876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf994d0e841aff%3A0xaaed7c84faec096b!2sPRICYN%20BAKERY%20ISRAEL!5e0!3m2!1sen!2sgh!4v1782370731987!5m2!1sen!2sgh"
+            loading="lazy"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
 
-            <div class="section-header">
+    <section id="contact-form-section" class="contact-form-section">
+      <div class="contact-form-shell">
+        <div class="contact-form-header">
+          <span>SEND A MESSAGE</span>
 
-                <h2>Get In Touch</h2>
+          <h2>We'd Love To Hear From You</h2>
 
-                <p>
-                    We'd love to hear from you. Reach out using any of the options below.
-                </p>
+          <p>
+            Have a question, wholesale enquiry, partnership proposal, or simply
+            want to get in touch? Complete the form below and we'll get back to
+            you as soon as possible.
+          </p>
+        </div>
 
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
             </div>
 
-            <div class="contact-cards">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
 
-                    <a href="tel:+233538849073" class="contact-card-link">
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
 
-                        <div class="contact-card">
+              <div class="form-group">
+                <label for="subject">Subject</label>
 
-                            <div class="contact-icon">📞</div>
-
-                            <h3>Phone</h3>
-
-                            <p>+233 53 884 9073<br>&nbsp;</p>
-
-                        </div>
-
-                    </a>
-
-                    <a href="#contact-form-section" class="contact-card-link">
-
-                        <div class="contact-card">
-
-                            <div class="contact-icon">📧</div>
-
-                            <h3>Email</h3>
-
-                            <p>pricynbakery@gmail.com<br>&nbsp;</p>
-
-                        </div>
-
-                    </a>
-
-                    <a href="#directions-section" class="contact-card-link">
-
-                        <div class="contact-card">
-
-                            <div class="contact-icon">📍</div>
-
-                            <h3>Location</h3>
-
-                            <p>Accra, Ghana<br>&nbsp;</p>
-
-                        </div>
-
-                    </a>
-
-                    <a href="#business-hours" class="contact-card-link">
-
-                        <div class="contact-card">
-
-                            <div class="contact-icon">🕒</div>
-
-                            <h3>Business Hours</h3>
-
-                            <p>6:00 AM - 10:00 PM<br>Closed Wednesdays</p>
-
-                        </div>
-
-                    </a>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="What is this about?"
+                />
+              </div>
             </div>
 
-        </section>
+            <div class="form-group">
+              <label for="message">Message</label>
 
-        <section id="directions-section" class="directions-section">
-
-            <div class="section-header">
-
-                <h2>Visit Us</h2>
-
-                <p>
-                    Visit us and enjoy freshly baked products straight from our bakery.
-                </p>
-
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Type your message..."
+                required
+              ></textarea>
             </div>
 
-            <div class="directions-container">
-
-                <div class="directions-info">
-
-                    <h3>PRICYN Bakery</h3>
-
-                    <p>
-                        Israel - Lapaz, Accra, Ghana
-                    </p>
-
-                </div>
-
-                <div class="map-container">
-
-                    <iframe
-                        title="PRICYN Bakery Location Map"
-                        aria-label="Map showing the location of PRICYN Bakery in Accra, Ghana"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2300.9624991061187!2d-0.2689945829757867!3d5.630945231390876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf994d0e841aff%3A0xaaed7c84faec096b!2sPRICYN%20BAKERY%20ISRAEL!5e0!3m2!1sen!2sgh!4v1782370731987!5m2!1sen!2sgh"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin">
-                    </iframe>
-
-                </div>
-
-                <a href="https://maps.app.goo.gl/P2nhDX7YepLwWSyS7"
-                    class="directions-btn"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                        <i class="fas fa-map-marker-alt"></i>
-                        Open in Google Maps
-
-                    </a>
-
-            </div>
-
-        </section>
-
-
-        <section id="contact-form-section" class="contact-form-section">
-            <div class="section-header">
-
-                <h2>Send Us a Message</h2>
-
-                <p>
-                    Have a question, enquiry or order request? We'd love to hear from you.
-                </p>
-
-            </div>
-
-            <div class="contact-form-container">
-
-                <form class="contact-form">
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="name">Full Name</label>
-
-                            <input type="text" id="name"
-                                placeholder="Enter your full name" required>
-
-                        </div>
-
-                        <div class="form-group">
-
-                            <label for="email">Email Address</label>
-
-                            <input type="email" id="email"
-                                placeholder="Enter your email address" required>
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="phone">Phone Number</label>
-
-                            <input type="tel" id="phone"
-                                placeholder="Enter your phone number">
-
-                        </div>
-
-                        <div class="form-group">
-
-                            <label for="subject">Subject</label>
-
-                            <input type="text" id="subject"
-                                placeholder="What is this about?">
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="message">Message</label>
-
-                        <textarea id="message"
-                                rows="6"
-                                placeholder="Type your message here..."
-                                required></textarea>
-
-                    </div>
-
-                    <div id="formMessage" class="form-message"></div>
-
-                    <button type="submit" class="submit-btn">
-                        Send Message
-                    </button>
-
-                </form>
-
-                
-
-            </div>
-
-        </section>
-
-        <section id="business-hours" class="business-hours">
-
-            <div class="section-header">
-
-                <h2>Business Hours</h2>
-
-                <p>
-                    Visit us during our operating hours for fresh bread, pastries and specialty products.
-                </p>
-
-            </div>
-
-            <div class="hours-card">
-
-                <div class="hours-row">
-
-                    <span>Monday</span>
-
-                    <span>6:00 AM – 10:00 PM</span>
-
-                </div>
-
-                <div class="hours-row">
-
-                    <span>Tuesday</span>
-
-                    <span>6:00 AM – 10:00 PM</span>
-
-                </div>
-
-                <div class="hours-row">
-
-                    <span>Wednesday</span>
-
-                    <span>Closed</span>
-
-                </div>
-
-                <div class="hours-row">
-
-                    <span>Thursday</span>
-
-                    <span>6:00 AM – 10:00 PM</span>
-
-                </div>
-
-                <div class="hours-row">
-
-                    <span>Friday</span>
-
-                    <span>6:00 AM – 10:00 PM</span>
-
-                </div>
-
-                <div class="hours-row">
-
-                    <span>Saturday</span>
-
-                    <span>6:00 AM – 10:00 PM</span>
-
-                </div>
-
-                <div class="hours-row">
-
-                    <span>Sunday</span>
-
-                    <span>6:00 AM – 10:00 PM</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="contact-cta">
-
-            <div class="cta-content">
-
-                <h2>Freshly Baked Goodness Awaits You</h2>
-
-                <p>
-                    Whether you're placing an order, making an enquiry,
-                    or simply looking for quality baked products,
-                    PRICYN Bakery is ready to serve you.
-                </p>
-
-                <a href="#top" class="cta-btn">
-                    Back to Top
-                </a>
-
-            </div>
-
-        </section>
-
-        <footer class="footer">
-
-            <div class="footer-container">
-
-                <div class="footer-column">
-
-                    <a href="../index.html">
-                        <img src="../images/logo/pb-prime.png"
-                            alt="PRICYN Bakery Logo"
-                            class="footer-logo" loading="lazy">
-                    </a>
-
-                    <p>
-                        Freshly baked bread, pastries and bakery products
-                        crafted with quality, care and consistency.
-                    </p>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Our Products</h3>
-
-                    <ul>
-                        <li>Butter Bread</li>
-                        <li>Sugar Bread</li>
-                        <li>Tea Bread</li>
-                        <li>Doughnuts</li>
-                        <li>Meat Pies</li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-column">
-
-                    <h3>Contact Info</h3>
-
-                    <p>
-                        📞
-                        <a href="tel:0538849073">
-                            053 884 9073
-                        </a>
-                    </p>
-                    <p>📍  Accra - Ghana</p>
-
-                    <p>
-                        ✉️
-                        <a href="mailto:pricynbakery@gmail.com">
-                            pricynbakery@gmail.com
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 PRICYN Bakery. All Rights Reserved.
-                </p>
-
-            </div>
-
-        </footer>
-
-        <button id="backToTop" class="back-to-top">
-            ↑
-        </button>
-
-        <script src="../js/contact.js"></script>
-        <script src="../js/navigation.js"></script>
-
-        </body>
-
+            <div id="formMessage" class="form-message"></div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="business-hours" class="business-hours">
+      <div class="hours-shell">
+        <div class="hours-header">
+          <span>BUSINESS HOURS</span>
+
+          <h2>Visit While The Ovens Are Warm</h2>
+
+          <p>
+            Fresh bread is baked throughout our production days. Visit during
+            our operating hours for the best experience.
+          </p>
+        </div>
+
+        <div class="hours-card">
+          <div class="hours-row">
+            <span>Monday</span>
+
+            <strong>6:00 AM – 10:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Tuesday</span>
+
+            <strong>6:00 AM – 10:00 PM</strong>
+          </div>
+
+          <div class="hours-row closed">
+            <span>Wednesday</span>
+
+            <strong>Closed</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Thursday</span>
+
+            <strong>6:00 AM – 10:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Friday</span>
+
+            <strong>6:00 AM – 10:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Saturday</span>
+
+            <strong>6:00 AM – 10:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Sunday</span>
+
+            <strong>6:00 AM – 10:00 PM</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <div class="contact-cta-shell">
+        <span>READY TO VISIT?</span>
+
+        <h2>Fresh Bread. Warm Smiles. Every Day.</h2>
+
+        <p>
+          Whether you're stopping by for your favourite loaf, placing a bulk
+          order, or simply saying hello, our doors are always open to welcome
+          you.
+        </p>
+
+        <div class="contact-cta-actions">
+          <a href="tel:+233538849073" class="contact-btn primary"> Call Us </a>
+
+          <a href="#top" class="contact-btn secondary"> Back to Top </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================
+         SITE FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <a href="../index.html">
+            <img
+              src="../images/logo/pb-prime.png"
+              alt="PRICYN Bakery Logo"
+              class="footer-logo"
+              loading="lazy"
+            />
+          </a>
+
+          <p>
+            Fresh bread, pastries and snacks crafted with care, quality and
+            consistency.
+          </p>
+
+          <div
+            class="footer-socials"
+            aria-label="PRICYN Bakery social media links"
+          >
+            <a
+              href="https://www.instagram.com/pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@pricyn.bakery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow PRICYN Bakery on TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/products.html">Products</a></li>
+            <li><a href="../pages/gallery.html">Gallery</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Products</h3>
+
+          <ul>
+            <li><a href="../pages/products.html">Butter Bread</a></li>
+            <li><a href="../pages/products.html">Sugar Bread</a></li>
+            <li><a href="../pages/products.html">Tea Bread</a></li>
+            <li><a href="../pages/products.html">Cakes</a></li>
+            <li><a href="../pages/products.html">Meat Pies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+
+          <ul>
+            <li>
+              <a href="../pages/privacy.html"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="../pages/terms.html"> Terms &amp; Conditions </a>
+            </li>
+
+            <li>
+              <a href="../pages/delivery.html"> Delivery &amp; Collection </a>
+            </li>
+
+            <li>
+              <a href="../pages/refunds.html"> Returns &amp; Refunds </a>
+            </li>
+          </ul>
+
+          <h3 class="footer-contact-heading">Contact</h3>
+
+          <p>
+            📞
+            <a href="tel:+233538849073"> +233 53 884 9073 </a>
+          </p>
+
+          <p>📍 HQ: Sowutuom Ofankor Road</p>
+
+          <p>📍 Branch: Israel Police Junction</p>
+
+          <p>
+            ✉️
+            <a href="mailto:pricynbakery@gmail.com"> pricynbakery@gmail.com </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PRICYN Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        emailjs.init({
+          publicKey: "F6P1B-lhRycfivcva",
+        });
+      });
+    </script>
+
+    <script defer src="../js/contact.js"></script>
+    <script defer src="../js/navigation.js"></script>
+  </body>
 </html>

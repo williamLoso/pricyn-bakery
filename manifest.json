@@ -1,0 +1,27 @@
+{
+  "name": "PRICYN Bakery",
+  "short_name": "PRICYN",
+  "description": "Fresh bread, pastries and artisan bakery products baked daily in Accra, Ghana.",
+
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+
+  "background_color": "#FFF8F1",
+  "theme_color": "#F68900",
+
+  "orientation": "portrait-primary",
+
+  "icons": [
+    {
+      "src": "images/logo/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
